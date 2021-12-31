@@ -51,9 +51,7 @@ publicclass PersonController {
 }
 ```
 
-- **ExceptionHandler：**
-
-自定义异常处理器可以帮助我们捕获异常，并进行一些简单的处理
+- 自定义全局异常处理器可以帮助我们捕获异常，并进行一些简单的处理
 
 ```java
 @ControllerAdvice(assignableTypes = {PersonController.class})
