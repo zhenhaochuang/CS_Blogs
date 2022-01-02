@@ -1,4 +1,4 @@
-# windows10安装linux虚拟机过程和出现的问题
+windows10安装linux虚拟机过程和出现的问题
 
 - 安装过程参考链接
 
@@ -21,10 +21,11 @@ Call to WHvSetupPartition failed: ERROR_SUCCESS (Last=0xc000000d/87) (VERR_NEM_V
 
 ![在这里插入图片描述](./images/169c66dac8717b6cd0e056c8b354e282.png)
 
-2. 找到如图两个复选框，并勾选上，点击确定即可启用。
-   ![在这里插入图片描述](./images/5f177f8273f5dd13b9d2a82d767dffe6.png)
+2. 找到如图两个复选框，并勾选上，点击确定即可启用。	
 
-3. 在VirtualBox的安装路径下进入cmd命令窗口，输入以下命令：
+![在这里插入图片描述](./images/5f177f8273f5dd13b9d2a82d767dffe6.png)
+
+2. 在VirtualBox的安装路径下进入cmd命令窗口，输入以下命令：
 
 ```bash
 #指定vbox下的虚拟系统开启这个功能
