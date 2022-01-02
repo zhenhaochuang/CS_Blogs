@@ -19,10 +19,10 @@ Call to WHvSetupPartition failed: ERROR_SUCCESS (Last=0xc000000d/87) (VERR_NEM_V
 
 1. 打开控制面板，在路径上输入：`控制面板\程序\程序和功能`,然后点击”启用或关闭 Windows 功能“。
 
-![在这里插入图片描述](C:\Users\zhenhc\Desktop\CS_Blogs\linux\images\169c66dac8717b6cd0e056c8b354e282.png)
+![在这里插入图片描述](./images/169c66dac8717b6cd0e056c8b354e282.png)
 
 2. 找到如图两个复选框，并勾选上，点击确定即可启用。
-   ![在这里插入图片描述](C:\Users\zhenhc\Desktop\CS_Blogs\linux\images\5f177f8273f5dd13b9d2a82d767dffe6.png)
+   ![在这里插入图片描述](./images/5f177f8273f5dd13b9d2a82d767dffe6.png)
 
 3. 在VirtualBox的安装路径下进入cmd命令窗口，输入以下命令：
 
