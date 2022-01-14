@@ -22,3 +22,9 @@ node -v
 npm -v
 ```
 
+5. 设置python版本
+
+```
+npm config set python D:\Python\Python27
+```
+
