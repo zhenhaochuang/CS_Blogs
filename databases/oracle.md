@@ -1,4 +1,4 @@
-### oracle实现自增主键
+### oracle实现自增主键（创建序列和触发器）
 
 Oracle没有这个”auto_increment”属性，所以它没法像MySQL般在表内定义自增主键。
 
@@ -42,9 +42,9 @@ CREATE TABLE Demo
 insert into Demo(id, key1, key2) value(SEQ.NEXTVAL,"k1","k2") 
 ```
 
-然而，上述方法不适用于insert的另一种使用方式；即
+> 然而，上述方法不适用于insert的另一种使用方式；即
 
-```
+```sql
 insert into table(key1, key2) select k1, k2 from anotherTable; 
 ```
 
@@ -52,7 +52,7 @@ insert into table(key1, key2) select k1, k2 from anotherTable;
 
 - 创建触发器
 
-```
+```sql
 create or replace trigger dectuser_tb_tri
 before insert on dectuser  /*触发条件：当向表dectuser执行插入操作时触发此触发器*/
  for each row     /*对每一行都检测是否触发*/

@@ -42,3 +42,5 @@ VBoxManage setextradata global "VBoxInternal/NEM/UseRing0Runloop" 0
 ​	[VirtualBox启动虚拟机，报错：Call to WHvSetupPartition failed](https://blog.csdn.net/Jop_qq/article/details/104043422)
 
 ​	[【杂项】Virtualbox 6与Hyper-V共存](https://rehtt.com/index.php/archives/225/)
+
+- [virtualbox虚拟机安装centos的时候安装上去了，但是重启之后却要重新安装](https://blog.csdn.net/xiaoyucjl/article/details/121370534)
