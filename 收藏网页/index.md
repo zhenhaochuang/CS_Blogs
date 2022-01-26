@@ -1,4 +1,4 @@
-[toc]
+[TOC]
 
 ### vue
 
@@ -34,6 +34,10 @@
 - [springboot命令行启动的三种方式](https://www.cnblogs.com/ziyue7575/p/dfa7791e5c96badbb2b94a3e89a07143.html)
 - [Mybatis与spring集成和分页插件](https://blog.csdn.net/what_where/article/details/101295213)
 
+### 消息队列
+
+- [吊炸天的 Kafka 图形化工具 Eagle，必须推荐给你！](https://blog.csdn.net/zhenghongcs/article/details/118539579)
+
 ### linux
 
 - [Linux 查看端口占用情况](https://www.runoob.com/w3cnote/linux-check-port-usage.html)
@@ -42,8 +46,6 @@
 
 - [markdown文件生成目录的方式](https://www.jianshu.com/p/b0a18eb32d09)
 - [如何写出优雅的开源项目-macrozheng](https://segmentfault.com/a/1190000020425411)
-
-
 
 ### 官网
 

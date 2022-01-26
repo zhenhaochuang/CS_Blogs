@@ -4,34 +4,33 @@
 
 ```properties
 server {
-		# nginx的监听端口，客户访问时的端口号
+        # nginx的监听端口，客户访问时的端口号
         listen       8060;
         server_name  localhost;
-		charset utf-8;
+        charset utf-8;
 
-	location / {
-			# 前端使用npm build:pro 生成的dist压缩包上传到服务器任意地址的路径
+    location / {
+            # 前端使用npm build:pro 生成的dist压缩包上传到服务器任意地址的路径
             root   /root/software/scrm-admin-ui/dist;
             index  index.html index.htm;
-            
+
             #没有这一行时，刷新带有/index.html的路径时，会失败
-	    try_files $uri $uri/ /index.html;
-	}
-		
-	location ~ /scrm-api {
-	    proxy_set_header Host $http_host;
-	    proxy_set_header X-Real-IP $remote_addr;
-	    proxy_set_header REMOTE-HOST $remote_addr;
-	    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-	    proxy_pass        http://localhost:8082;
-	}
+        try_files $uri $uri/ /index.html;
+    }
+
+    location ~ /scrm-api {
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header REMOTE-HOST $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass        http://localhost:8082;
+    }
 
         error_page   500 502 503 504  /50x.html;
         location = /50x.html {
             root   html;
         }
     }
-
 ```
 
 4. 在主配置文件nginx.conf里会有一行导入新建的配置文件
@@ -40,7 +39,7 @@ server {
     include /etc/nginx/conf.d/*.conf;
 ```
 
-5.  在主配置文件里把第一行`user nginx`改为`user root`,如果不改会返回500 internal异常
+5. 在主配置文件里把第一行`user nginx`改为`user root`,如果不改会返回500 internal异常
 6. 完整主配置文件
 
 ```properties
@@ -71,14 +70,12 @@ http {
     #tcp_nopush     on;
 
     keepalive_timeout  65;
-    
+
     #gzip  on;
 
     client_max_body_size 1024m;
 
     include /etc/nginx/conf.d/*.conf;
-  
+
 }
-
 ```
-

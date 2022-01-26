@@ -40,7 +40,4 @@ spring:
         config-retry-time: 2000
         # 监听长轮询超时时间
         config-long-poll-timeout: 46000
-
-
 ```
-

@@ -1,6 +1,6 @@
 ### docker安装mysql中文乱码问题
 
->说明：如果已经创建好mysql容器，首先需要删除容器，然后重新根据镜像创建容器
+> 说明：如果已经创建好mysql容器，首先需要删除容器，然后重新根据镜像创建容器
 
 1. 首先，进入安装mysql查看字符集：
 
@@ -43,7 +43,7 @@ docker run -p 3306:3306 --name mysql \
 -d mysql:5.7
 ```
 
->**注意：在docker中的mysql的配置文件所在路径在 [/etc/mysql] 下，但是在该目录下，有 [conf.d my.cnf my.cnf.fallback mysql.cnf mysql.conf.d] 这么多文件，映射时候只有映射 [my.cnf] 这个配置文件才能生效，映射其他配置文件无效，请注意！！！**
+> **注意：在docker中的mysql的配置文件所在路径在 [/etc/mysql] 下，但是在该目录下，有 [conf.d my.cnf my.cnf.fallback mysql.cnf mysql.conf.d] 这么多文件，映射时候只有映射 [my.cnf] 这个配置文件才能生效，映射其他配置文件无效，请注意！！！**
 
 4. 再次查看字符集，发现已经变为utf8
 
@@ -54,4 +54,3 @@ docker run -p 3306:3306 --name mysql \
 ### 参考链接
 
 - [docker安装mysql后插入中文乱码问题如何解决_米兰小码匠的博客-程序员信息网](https://www.i4k.xyz/article/weixin_43645603/107981930)
-
