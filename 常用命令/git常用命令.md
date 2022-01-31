@@ -39,4 +39,3 @@ git remote -v
 ```shell
 git remote set-url origin git@github.com:zhenhc/mybatis-plus-generate.git
 ```
-
