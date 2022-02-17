@@ -4,10 +4,10 @@
 
 ## 参考篇
 
-- [安装Visual Studio生成工具2019](reference\安装Visual Studio生成工具2019.md)
+- [安装VisualStudio生成工具2019](./reference/安装VisualStudio生成工具2019.md)
 
-- [FFmpeg 视频处理](reference\FFmpeg 视频处理.md)
+- [FFmpeg视频处理](./reference/FFmpeg视频处理.md)
 
 - [idea实用技巧](./reference/idea实用技巧.md)
 
-- [docker安装mysql中文乱码问题](reference\docker安装mysql中文乱码问题.md)
+- [docker安装mysql中文乱码问题](./reference/docker安装mysql中文乱码问题.md)
