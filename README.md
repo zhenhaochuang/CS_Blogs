@@ -13,3 +13,6 @@
 ## [linux](./linux)
 - [linux安装jdk](./linux/linux安装jdk.md)
 - [windows10安装linux虚拟机过程和出现的问题](./linux/windows10安装linux虚拟机过程和出现的问题.md)
+
+## [python](./python)
+- [pip修改默认安装路径](./python/pip修改默认安装路径.md)
