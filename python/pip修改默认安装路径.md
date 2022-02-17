@@ -9,17 +9,23 @@ pip --version
 ```
 python -m site
 ```
+- 使用命令`python -m site -help`找到site.py配置文件路径
 
-- 使用pip查看第三方包的安装路径
+- 修改site.py配置文件中的`USER_SITE`和`USER_BASE`属性的值
+> `USER_SITE`:pip install下载的第三方包的安装路径  
+`USER_BASE`:pip自动下载的脚本路径
+
+ep：
+```
+USER_SITE = "E:\Python\Python310\Lib\site-packages"
+USER_BASE = "E:\Python"
+```
+
+- 使用pip安装和查看第三方包的安装路径
 
 ```
+pip install redis
 pip show redis
-```
-
-- pip 安装包的时候加上参数--user 包就会自动安装到上面的自定义路径下面
-
-```
-pip install redis --user
 ```
 
 参考：
