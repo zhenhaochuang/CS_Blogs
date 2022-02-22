@@ -22,8 +22,8 @@ settings->Features->Explorer中的`Copy Relative Path Separator`设置为/。
 
 ## 修改vscode的插件安装路径
 1. 打开cmd命令窗口，输入`code --help`,查看命令提示。
-2. 输入命令
+2. 输入命令(路径最后加一个'\')
 ```
-code --extensions-dir F:\vscode\extensions
+code --extensions-dir F:\vscode\extensions\
 ```
 3. 重新安装插件，或者复制以前的插件到新路径即可
