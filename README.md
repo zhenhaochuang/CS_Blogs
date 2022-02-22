@@ -9,6 +9,7 @@
 - [idea实用技巧](./reference/idea实用技巧.md)
 - [docker安装mysql中文乱码问题](./reference/docker安装mysql中文乱码问题.md)  
 - [oracle使用序列和触发器实现主键自增](./databases/oracle使用序列和触发器实现主键自增.md)
+- [vscode使用小技巧](./reference/vscode工具使用.md)
 
 ## [linux](./linux)
 - [linux安装jdk](./linux/linux安装jdk.md)
